@@ -1,0 +1,261 @@
+
+
+
+
+  
+<div class="container">
+  <% include partials/header %>
+   <div class="row">
+   <div class="col-lg-2 quiz-image1">
+       
+   </div>    
+  <div class="col-lg-8 " align="center"> 
+   
+      <h1>Create Your Quiz</h1>
+       
+<form action="/quiz" method="POST">
+<div class="form-group row">
+  <label for="quizname" class="col-sm-2 col-form-label">Quiz Title</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="quizname" name="quizname" placeholder="Quiz Title">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="quizdescription" class="col-sm-2 col-form-label">Description:</label>
+  <div class="col-sm-10">
+    <input type="text" name="Quizdescription" class="form-control title-division" id="quizdescription" placeholder="Quiz Title">
+  </div>
+</div>
+
+
+<h3>Question 1:</h3>
+ <div class="form-group row">
+  <label for="question1" class="col-sm-2 col-form-label">Question </label>
+  <div class="col-sm-10">
+    <input type="text" name="question1" class="form-control" id="question1" placeholder="Question ">
+  </div>
+</div>
+
+ <div class="form-group row">
+  <label for="answer1" class="col-sm-2 col-form-label">A </label>
+  <div class="col-sm-10">
+    <input type="text" name="Aanswer1" class="form-control" id="answer1" placeholder="Answer ">
+  </div>
+</div>
+
+ 
+ <div class="form-group row">
+  <label for="answer2" class="col-sm-2 col-form-label">B </label>
+  <div class="col-sm-10">
+    <input type="text" name="Aanswer2" class="form-control" id="answer2" placeholder="Answer">
+  </div>
+</div> 
+
+<div class="form-group row">
+  <label for="answer3" class="col-sm-2 col-form-label">C </label>
+  <div class="col-sm-10">
+    <input type="text" name="Aanswer3" class="form-control" id="answer3" placeholder="Answer">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="answer4" class="col-sm-2 col-form-label">D </label>
+  <div class="col-sm-10">
+    <input type="text" name="Aanswer4" class="form-control" id="answer4" placeholder="Answer">
+  </div>
+</div>
+ <!--checkbock answer--> 
+ <h5 class = "correc-answer">Select correct answer for question 1 </h5>
+
+ <label for="a" class="col-sm-2 col-form-label">A </label>
+ <input class="radioans"  type="radio" name="correct1" id="a" value="1">
+ <label for="b" class="col-sm-2 col-form-label">B </label>
+<input class="radioans" type="radio" name="correct1" id="b" value="2">
+<label for="c" class="col-sm-2 col-form-label">C </label>
+<input class="radioans" type="radio" name="correct1" id="c" value="3">
+<label for="d" class="col-sm-2 col-form-label">D </label>
+<input class="radioans question-division" type="radio" name="correct1" id="D" value="4">
+
+
+<!-- Question2 Satrts Here -->
+
+<h3>Question 2:</h3>
+ <div class="form-group row">
+  <label for="question2" class="col-sm-2 col-form-label">Question </label>
+  <div class="col-sm-10">
+    <input type="text" name="question2" class="form-control" id="question2" placeholder="Question ">
+  </div>
+</div>
+
+ <div class="form-group row">
+  <label for="banswer1" class="col-sm-2 col-form-label">A </label>
+  <div class="col-sm-10">
+    <input type="text" name="Banswer1" class="form-control" id="banswer1" placeholder="Answer">
+  </div>
+</div>
+
+ 
+ <div class="form-group row">
+  <label for="banswer2" class="col-sm-2 col-form-label">B </label>
+  <div class="col-sm-10">
+    <input type="text" name="Banswer2" class="form-control" id="banswer2" placeholder="Answer">
+  </div>
+</div> 
+
+<div class="form-group row">
+  <label for="banswer3" class="col-sm-2 col-form-label">C </label>
+  <div class="col-sm-10">
+    <input type="text" name="Banswer3" class="form-control" id="banswer3" placeholder="Answer">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="banswer4" class="col-sm-2 col-form-label">D</label>
+  <div class="col-sm-10">
+    <input type="text" name="Banswer4" class="form-control" id="banswer4" placeholder="Answer">
+  </div>
+</div>
+
+ <!--checkbock answer--> 
+ <h5 class = "correc-answer">Select correct answer for question 3 </h5>
+
+ <label for="a2" class="col-sm-2 col-form-label">A </label>
+ <input class="radioans"  type="radio" name="correct2" id="a2" value="1">
+ <label for="b2" class="col-sm-2 col-form-label">B </label>
+<input class="radioans" type="radio" name="correct2" id="b2" value="2">
+<label for="c2" class="col-sm-2 col-form-label">C </label>
+<input class="radioans" type="radio" name="correct2" id="c2" value="3">
+<label for="d2" class="col-sm-2 col-form-label">D </label>
+<input class="radioans question-division" type="radio" name="correct2" id="d2" value="4">
+
+
+   
+<!-- Question3 Satrts Here -->
+
+<h3>Question 3:</h3>
+ <div class="form-group row">
+  <label for="question3" class="col-sm-2 col-form-label">Question </label>
+  <div class="col-sm-10">
+    <input type="text" name="question3" class="form-control" id="question3" placeholder="Question ">
+  </div>
+</div>
+
+ <div class="form-group row">
+  <label for="canswer1" class="col-sm-2 col-form-label">A </label>
+  <div class="col-sm-10">
+    <input type="text" name="Canswer1" class="form-control" id="canswer1" placeholder="Answer">
+  </div>
+</div>
+
+ 
+ <div class="form-group row">
+  <label for="canswer2" class="col-sm-2 col-form-label">B </label>
+  <div class="col-sm-10">
+    <input type="text" name="Canswer2" class="form-control" id="canswer2" placeholder="Answer">
+  </div>
+</div> 
+
+<div class="form-group row">
+  <label for="canswer3" class="col-sm-2 col-form-label">C </label>
+  <div class="col-sm-10">
+    <input type="text" name="Canswer3" class="form-control" id="canswer3" placeholder="Answer">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="canswer4" class="col-sm-2 col-form-label">D</label>
+  <div class="col-sm-10">
+    <input type="text" name="Canswer4" class="form-control" id="canswer4" placeholder="Answer">
+  </div>
+</div>
+ <!--checkbock answer--> 
+ <h5 class = "correc-answer">Select correct answer for question 3 </h5>
+
+ <label for="a3" class="col-sm-2 col-form-label">A </label>
+ <input class="radioans"  type="radio" name="correct3" id="a3" value="1">
+ <label for="b3" class="col-sm-2 col-form-label">B </label>
+<input class="radioans" type="radio" name="correct3" id="b3" value="2">
+<label for="c3" class="col-sm-2 col-form-label">C </label>
+<input class="radioans" type="radio" name="correct3" id="c3" value="3">
+<label for="d3" class="col-sm-2 col-form-label">D </label>
+<input class="radioans question-division" type="radio" name="correct3" id="d3" value="4">
+
+   
+
+<!-- Question 4 Satrts Here -->
+
+<h3>Question 4:</h3>
+ <div class="form-group row">
+  <label for="question4" class="col-sm-2 col-form-label">Question </label>
+  <div class="col-sm-10">
+    <input type="text" name="question4" class="form-control" id="question4" placeholder="Question ">
+  </div>
+</div>
+
+ <div class="form-group row">
+  <label for="danswer1" class="col-sm-2 col-form-label">A </label>
+  <div class="col-sm-10">
+    <input type="text" name="Danswer1" class="form-control" id="danswer1" placeholder="Answer">
+  </div>
+</div>
+
+ 
+ <div class="form-group row">
+  <label for="danswer2" class="col-sm-2 col-form-label">B </label>
+  <div class="col-sm-10">
+    <input type="text" name="Danswer2" class="form-control" id="danswer2" placeholder="Answer">
+  </div>
+</div> 
+
+<div class="form-group row">
+  <label for="danswer3" class="col-sm-2 col-form-label">C</label>
+  <div class="col-sm-10">
+    <input type="text" name="Danswer3" class="form-control" id="danswer3" placeholder="Answer">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="danswer4" class="col-sm-2 col-form-label">D</label>
+  <div class="col-sm-10">
+    <input type="text" name="Danswer4" class="form-control" id="danswer4" placeholder="Answer">
+  </div>
+</div>
+
+ <!--checkbock answer--> 
+ <h5 class = "correc-answer">Select correct answer for question 4 </h5>
+
+ <label for="a4" class="col-sm-2 col-form-label">A </label>
+ <input class="radioans"  type="radio" name="correct4" id="a4" value="1">
+ <label for="b4" class="col-sm-2 col-form-label">B </label>
+<input class="radioans" type="radio" name="correct4" id="b4" value="2">
+<label for="c4" class="col-sm-2 col-form-label">C </label>
+<input class="radioans" type="radio" name="correct4" id="c4" value="3">
+<label for="d4" class="col-sm-2 col-form-label">D </label>
+<input class="radioans question-division" type="radio" name="correct4" id="d4" value="4">
+
+
+
+<div class="form-group row">
+  <div class="col-sm-10">
+    <input type="submit" class="btn btn-primary" value = SUBMIT>
+
+  </div>
+</div>
+</form>
+<div><a href="/quiz/allquiz" class="btn btn-dark" role="button">Go to Quizzes</a>
+  <a href="/" class="btn btn-dark" role="button">Go to Home</a></div>
+<% include partials/footer %>
+</div>
+  <div class="col-lg-2 quiz-image1 "></div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+ 

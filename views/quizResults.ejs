@@ -1,0 +1,36 @@
+
+ 
+  <div class="container">
+    <% include partials/header %>
+      <div class="row">
+      <div class="col-lg-2 quiz-image1"></div>  
+
+     <div class="col-lg-8 "  align="center">
+
+<% var correct = 0 %>
+<% var wrong = 0 %>
+
+<% for (var i = 0; i < result.length; i++) { %>
+ <% if (result[i].correct === result[i].response){ %>
+   <%   correct++ %>
+ <% } else{ %>
+    <%  wrong++ %>
+<%  } %>
+
+<% } %>
+
+<h1>You have <%= correct %> answer(s) correct</h1>
+<h1>You have <%= wrong %> answer(s) wrong</h1>
+<a href="/quiz/allquiz" class="btn btn-primary" role="button">Go to Quizzes</a>
+<a href="/" class="btn btn-primary" role="button">Go to Home</a>
+
+<% include partials/header %>
+
+   
+        </div>
+        <div class="col-lg-2 quiz-image1"></div>
+     </div>
+        
+  </div>
+
+    

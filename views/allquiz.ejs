@@ -1,0 +1,35 @@
+
+<div class="container">
+     <% include partials/header %>
+     <div class="row">
+<div class="col-lg-2 quiz-image1"></div>
+<div class="col-lg-8" align="center">
+    
+    <div class="card">
+<div class="card-body text-white  bg-secondary">
+ Available Quizzes
+</div>
+</div> 
+<% quotes.forEach(function(quote){ %> 
+<h1><a class="btn btn-primary" href="<%= quote.title_id %>" role="button"><%= quote.title %></a></h1>
+
+    <% }) %>
+
+<a href="/" class="btn btn-dark" role="button">Go to Home</a>
+  
+<div><% include partials/footer %></div>
+</div>
+  
+<div class="col-lg-2 quiz-image1"></div>
+</div>
+</div> 
+    
+
+ 
+
+</div> 
+        
+        
+        
+        
+    

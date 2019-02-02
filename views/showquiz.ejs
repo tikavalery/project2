@@ -1,0 +1,62 @@
+
+
+
+
+
+
+      
+        
+      <div class="container">
+     <% include partials/header %>
+     <div class="row">
+     <div class="col-lg-2 quiz-image1 ">
+         
+     </div>    
+    <div class="col-lg-8" align="center">
+     
+            <div class="card">
+                <div class="card-body   bg-secondary">
+                 <h1 class ="title"> <%=  question[0].title + " Quiz" %></h1>
+                </div>
+                </div>  
+                           
+                <div class ="inner-center">   
+   <h1 class ="description"> <%=  question[0].description %></h1>
+   
+<!-- Form for sending results of quiz to Database -->
+   <form action="/quiz/results" method="POST">
+       <!-- Value of Title id hidden in an input -->
+  <input type="hidden" value="<%=  question[0].title_id %>" name="tid" id="something" />
+
+  <!-- Loop for displaying questions and asnwers to user -->  
+     <% for (i = 0; i < question.length; i++) { %>
+     <% var ab = 1; %>
+   <h1 class ="question"> <%= question[i].question  %></h1>
+   <!--<form class="all-ans"> -->
+    
+     <input type="radio" required name="answer<%= i %>" id="a1" class="ans1" value="<%=  question[i].questions_id + ",1" %>" ><%=  question[i].answer1%> <br>
+         <input type="radio" name="answer<%= i %>" id="a2" class="ans2" value="<%=  question[i].questions_id + ",2" %>"><%= question[i].answer2 %> <br>
+          <input type="radio" name="answer<%= i %>" id="a3" class="ans3" value="<%=  question[i].questions_id + ",3" %>"><%=  question[i].answer3 %> <br>
+           <input type="radio" name="answer<%= i %>" id="a4" class="ans4" value="<%=  question[i].questions_id + ",4" %>"><%=  question[i].answer4 %> <br>
+    <!--</form> -->
+    <% } %>
+    <!-- create a time stamp Id for every quiz and use the stamp as identifier for the quiz in the database --> 
+    <% var timeids = Math.floor((new Date()).getTime() / 1000) %>
+
+  <input type="hidden" value="<%=  timeids %>" name="timeid" id="something" />
+        <button id="bt" class="btn btn-primary"> SUBMIT </button>
+        <div><a href="/quiz/allquiz" class="btn btn-dark" role="button">Go to Quizzes</a>
+        <a href="/" class="btn btn-dark" role="button">Go to Home</a></div>
+    </form>
+     </div>
+    </div>
+    <div class="col-lg-2 quiz-image1"></div>
+  </div>   
+<!-- Looping through results quotes sent from server.js from database  -->  
+</div>     
+</form>
+
+  
+
+
+<% include partials/header %>

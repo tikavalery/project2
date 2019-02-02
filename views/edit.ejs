@@ -1,0 +1,18 @@
+<% include partials/header %>
+<h1>Edit Page</h1>
+
+<form action="/quiz" method ="POST">
+Quiz Name: <input type="text" name="quizname"><br>
+Quiz Description: <input type="text" name="Quizdescription" ><br>
+<div class="question1">
+     Question 1: <input type="text" name="question1"><br>
+     answer 1: <input type="text" name="Aanswer1"><br>
+     answer 2: <input type="text" name="Banswer2"><br>
+     answer 3: <input type="text" name="Canswer3"><br>
+     answer 4: <input type="text" name="Danswer4"><br>
+</div>
+
+<input type="submit" value="Submit">
+</form>
+
+<% include partials/footer %>

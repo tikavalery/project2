@@ -1,0 +1,69 @@
+.btn {
+    margin-top:50px;
+
+    }
+.quiz-image1{
+    /* background-image: url(../images/pic1);
+    background-color:linear-gradient(rgb(207, 207, 248),rgb(112, 112, 241)) ; */
+    background-image: linear-gradient(to bottom right,blue, rgb(0, 255, 234));
+   
+    min-height:100vh;
+
+}
+.quiz-image2{background-image: linear-gradient(to bottom right, red, yellow);}
+
+
+.title-division{
+    margin-bottom: 50px;
+}
+.question-division{
+    margin-bottom: 100px;
+}
+
+.radioans{
+    margin-right: 40px;
+}   
+
+/* Styles for available quiz page */
+.text-white{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Styles for available all quiz page */
+.question{
+    font-size:25px;
+    font-weight: bold;
+    
+}
+
+/* Styles for show quiz page */
+.title{
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    
+}
+
+.description{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.inner-center{
+
+    text-align: left;
+    margin-left: 70px;
+}
+
+/* Styles for show delete page */
+.delete-title{
+    padding-bottom: 0px;
+    
+}
+
+.btn-sm{
+    padding-left: 0px;
+    margin-bottom: 25px;
+}
+    
